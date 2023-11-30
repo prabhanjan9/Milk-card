@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILK Card</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+</head>
+<!-- Add these script tags in your HTML file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Milk Card</title>
+  
+</head>
+<body style="color: #000;">
+  <h1>Milk Card</h1>
+  <h2 >Milk Records Payment</h2>
+<p style="font-size: small;"><strong>ನಿಮ್ಮ ಹಾಲಿನ ದಾಖಲೆಗಳನ್ನು ನಿರ್ವಹಿಸುವ ಅನುಕೂಲಕ್ಕಾಗಿ, ಈ ಸೇವೆಯನ್ನು ಬಳಸುವುದಕ್ಕಾಗಿ ದಯವಿಟ್ಟು 19 ರೂಗಳನ್ನು ಪಾವತಿಸಿ. ನೀವು ಇನ್ನು ಮುಂದೆ ಪುಸ್ತಕಗಳಲ್ಲಿ ಅಥವಾ ಕಾರ್ಡ್‌ನಲ್ಲಿ ದಾಖಲೆಗಳನ್ನು 
+  ನಿರ್ವಹಿಸುವ ಅಗತ್ಯವಿಲ್ಲ.</strong></p>
+    <p style="font-size: small ;" > <strong>For the convenience of maintaining your milk records, 
+      please pay 19 Rs for using this service. You no longer 
+      need to manage records in books or on a card and manually calculate the total amount. Enjoy a hassle-free experience!</strong></p>
+    
+    <p><strong>PhonePe Number: 9113095870 <span id="phoneNumber"></strong></span>
+        
+    </p>
+
+
+
+
+  <form id="milkForm">
+    <label for="date">ದಿನಾಂಕ/Date:</label>
+    <input type="date" id="date" required>
+    <label for="liters">ಲೀಟರ್/Liters:</label>
+    <input type="number" id="liters" step="0.5" required>
+    <label for="amount">ಒಂದು ಲೀಟರ್‌ಗೆ ಮೊತ್ತ/Amount per Liter:</label>
+    <input type="number" id="amount" step="0.5" required>
+    <button type="button" onclick="addEntry()">Add Entry / ಆಡ್ ಎಂಟ್ರಿ </button>
+  </form>
+  <div id="entries">
+    <h2>Entries / ಎಂಟ್ರಿ :</h2>
+    <ul id="entryList"></ul>
+  </div>
+  
+  <script src="index.js"></script>
+
+</body>
+<div id="entries">
+  <h2>Entries:</h2>
+  <ul id="entryList"></ul>
+  <p id="totalSum" style="color: #000;">ಒಟ್ಟು ಮೊತ್ತ / Total Sum: Rs 0</p>
+</div>
+<ul id="entryList"></ul>
+
+<button onclick="shareViaWhatsApp()">Share via WhatsApp</button>
+<!-- Add this button to your HTML -->
+
+<button onclick="exportToExcel()">Export to Excel</button>
+
+
+
+
+</html>
+
+
+</body>
+</html>
